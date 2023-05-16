@@ -1,4 +1,7 @@
 ---
+import '@fontsource/oswald';
+import '@fontsource/raleway';
+
 ---
 
 <html lang="en" class="bg-primary">
@@ -7,16 +10,25 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Lucas Lima - Full Stack Developer</title>
 	</head>
-	<body class="flex flex-col max-w-2xl">
-		<h1 class="font-bold text-3xl text-white">Lucas Lima</h1>
-		<div class="bg-black  h-28"></div>
+	
+	<body class="flex flex-col max-w-2xl m-auto mt-10">
+		<h1 class=" text-3xl text-secondary font-oswald">Lucas Lima</h1>
+		<div class="relative w-full h-40 mt-4 overflow-hidden rounded-sm">
+			<video class="absolute top-0 left-0 object-cover  w-full h-full" autoplay loop muted>
+				<source src="/sp_footage.mp4" type="video/mp4" />
+			  </video>
+			  <div class="absolute top-0 left-0 w-full h-full flex items-center  bg-primary bg-opacity-70 p-4">
+				<span class=" text-secondary font-bold text-4xl font-oswald">FULL STACK DEVELOPER <br>
+					BASED IN SÃO PAULO, BRAZIL</span>	  
+			</div>				
+		</div>
 		<div class="flex items-center">
 			<img src="/favicon.svg" alt="Lucas Lima" class="rounded-full max-h-28 aspect-square bg-slate-400" />
 			<div class="flex flex-col ml-10 content-center justify-center">
-				<span>blablablablab</span>
-				<span class="flex-wrap">blablablablabdddddddddd dddddddddddddd dddddddddddddddddddddddddddddddd</span>
+				<span class="text-white font-raleway" >blablablablab</span>
+				<span class="flex-wrap text-white font-raleway">blablablablabdddddddddd dddddddddddddd dddddddddddddddddddddddddddddddd</span>
 			</div>
 			<div class="flex flex-col">
 				<img src="/favicon.svg" alt="GitHub" class="rounded-full w-12 aspect-square bg-slate-400 mt-5" />
@@ -24,5 +36,5 @@
 				<img src="/favicon.svg" alt="Email" class="rounded-full w-12 aspect-square bg-slate-400 mt-5"/>
 			</div>
 		</div>
-	</body>
-</html>
+		</body>
+	  </html>

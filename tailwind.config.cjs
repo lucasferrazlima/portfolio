@@ -7,6 +7,11 @@ module.exports = {
         primary: '#333343',
         secondary: '#f0eee9',
       },
+      fontFamily: {
+        oswald: ['Oswald', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
     plugins: [],
   },
