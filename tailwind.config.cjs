@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         primary: '#333343',
-        secondary: '#f0eee9',
+        secondary: '#FAF0D7',
+        tertiary: '#84A5AD',
       },
       fontFamily: {
         oswald: ['Oswald', 'sans-serif'],
