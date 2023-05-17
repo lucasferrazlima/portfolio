@@ -24,9 +24,15 @@
     }
     }
 
-    a:hover span {
+    #github:hover span {
         color: #ffffff;
     }
+
+
+    #linkedin:hover span {
+        color: #0e76a8;
+    }
+
 
   </style>
 
@@ -44,11 +50,11 @@
         <img src="/github.svg" alt="GitHub" id="githubLogo" class="rounded-md w-6 aspect-square bg-primary m-auto " />
         <span class="m-auto text-secondary font-raleway">GitHub</span>
     </a>
-    <a href="" target="_blank" class="flex gap-2 hover:text-blue-50">
-        <img src="/linkedin.svg" alt="LinkedIn" class="rounded-none w-6 aspect-square bg-primary m-auto"/>
+    <a href="" target="_blank" id="linkedin" class="flex gap-2 hover:text-blue-50">
+        <img src="/linkedin.svg" alt="LinkedIn" id="linkedinLogo" class="rounded-none w-6 aspect-square bg-primary m-auto"/>
         <span class="m-auto text-secondary font-raleway">LinkedIn</span>
     </a>
-    <button class="text-secondary font-raleway">
+    <button class="text-secondary font-raleway hover:text-white">
         About me 🡢
     </button>
 </div>
@@ -57,6 +63,8 @@
 
     const github = document.getElementById('github');
     const githubLogo = document.getElementById('githubLogo');
+    const linkedin = document.getElementById('linkedin');
+    const linkedinLogo = document.getElementById('linkedinLogo');
 
     github.addEventListener('mouseover', () => {
         githubLogo.setAttribute('src', '/github-hover.svg');
@@ -64,6 +72,14 @@
 
     github.addEventListener('mouseout', () => {
         githubLogo.setAttribute('src', '/github.svg');
+    });
+
+    linkedin.addEventListener('mouseover', () => {
+        linkedinLogo.setAttribute('src', '/linkedin-hover.svg');
+    });
+
+    linkedin.addEventListener('mouseout', () => {
+        linkedinLogo.setAttribute('src', '/linkedin.svg');
     });
 
 </script>
